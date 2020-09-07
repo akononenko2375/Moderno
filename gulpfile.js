@@ -9,7 +9,7 @@ let gulp = require('gulp'),
 
 gulp.task('sass', function(){
 	return gulp.src('app/scss/**/*.+(scss|sass)')
-		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(rename({suffix: '.min', prefix: ''}))
 		.pipe(autoprefixer({overrideBrowserslist: ['last 8 versions']}))
 		.pipe(gulp.dest('app/css'))
@@ -61,4 +61,4 @@ gulp.task('watch', function() {
 	gulp.watch('app/js/*.js', gulp.parallel('js'));
 });
 
-gulp.task('default', gulp.parallel('script', 'watch', 'sass', 'browser-sync'));
+gulp.task('default', gulp.parallel('style', 'script', 'watch', 'sass', 'browser-sync'));
