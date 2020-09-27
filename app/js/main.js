@@ -12,6 +12,31 @@ $(function () {
 		slidesToScroll: 4,
 		dots: true,
 		arrows: false,
+		responsive: [
+			{
+				breakpoint: 1900,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 1441,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		]
 	});
 
 	$(".js-range-slider").ionRangeSlider({
@@ -47,16 +72,16 @@ $(function () {
 		return false;
 	});
 
-	
-	
+
+
 	$('.menu__btn').on('click', function () {
 		$('.menu__list').slideToggle();
 	});
-	
+
 	$('.header__btn-menu').on('click', function () {
 		$('.header__box').toggleClass('active');
 	});
-	
+
 	$('input[type="file"], select').styler();
 
 
