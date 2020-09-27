@@ -585,7 +585,7 @@
 .products {
 	padding: 110px 0;
 	background-color: $grey;
-	
+
 }
 
 .products__wrapper,
@@ -627,14 +627,12 @@
 	flex-wrap: wrap;
 }
 
-.products .product__item {
-	
-}
+.products .product__item {}
 
 .product__item {
 	max-width: 442px;
 	width: 100%;
-	
+
 	box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
 	margin-bottom: 30px;
 
@@ -1486,6 +1484,7 @@ button.icon-sort {
 	&.list {
 		max-width: 100%;
 		flex-basis: 100%;
+
 		.product__item-img {
 			width: 240px;
 			float: left;
@@ -1777,6 +1776,7 @@ button.icon-sort {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px 0;
+	align-items: center;
 }
 
 .price__product {
@@ -1814,6 +1814,26 @@ button.icon-sort {
 
 	.icon-heart-o {
 		background-color: #42a5f5;
+	}
+
+	.jq-selectbox {
+		width: 100%;
+	}
+
+	.jq-selectbox__select {
+		border: 1px solid #dedede;
+		border-bottom-color: #dedede;
+		border-radius: 0;
+		background: #f9f9f9;
+		box-shadow: none;
+		font-family: 'Roboto-Regular', sans-serif;
+		color: #707070;
+		text-shadow: none;
+	}
+
+
+	.jq-selectbox__trigger {
+		border-left: none;
 	}
 }
 
@@ -2283,6 +2303,30 @@ button.icon-sort {
 		color: #707070;
 	}
 
+	.jq-selectbox {
+		max-width: 540px;
+		width: 100%;
+	}
+
+	.jq-selectbox__select {
+		height: 40px;
+		padding: 0 18px;
+		border: 1px solid #dedede;
+		border-bottom-color: #dedede;
+		border-radius: 0;
+		background: #f9f9f9;
+		box-shadow: none;
+		font-family: 'Roboto-Regular', sans-serif;
+		color: #707070;
+		text-shadow: none;
+		line-height: 40px;
+	}
+
+
+	.jq-selectbox__trigger {
+		border-left: none;
+	}
+
 	button {
 		border: none;
 		background-color: $green;
@@ -2574,6 +2618,7 @@ button.icon-sort {
 		background-color: #f9f9f9;
 		height: 40px;
 		padding: 0 18px;
+
 		&::placeholder {
 			color: #707070;
 		}
@@ -2742,6 +2787,7 @@ button.icon-sort {
 		height: 40px;
 		padding: 0 18px;
 		outline: none;
+
 		&::placeholder {
 			color: #707070;
 		}
@@ -2781,6 +2827,7 @@ button.icon-sort {
 	align-items: center;
 	font-size: 13px;
 	color: #444444;
+
 	&:nth-child(odd) {
 		background-color: #f9f9f9;
 	}
@@ -2798,11 +2845,13 @@ button.icon-sort {
 	@include f500;
 
 }
+
 .withdrawals__content-price {
 	width: 70px;
 	@include f700;
 
 }
+
 .withdrawals__content-status {
 	width: 88px;
 	@include f700;
