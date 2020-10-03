@@ -585,7 +585,6 @@
 .products {
 	padding: 110px 0;
 	background-color: $grey;
-
 }
 
 .products__wrapper,
@@ -627,12 +626,14 @@
 	flex-wrap: wrap;
 }
 
-.products .product__item {}
+.products .product__item {
+	flex-basis: calc(25% - 30px);
+	margin-left: 30px;
+}
 
 .product__item {
 	max-width: 442px;
 	width: 100%;
-
 	box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
 	margin-bottom: 30px;
 
@@ -771,6 +772,7 @@
 			}
 		}
 	}
+
 }
 
 
